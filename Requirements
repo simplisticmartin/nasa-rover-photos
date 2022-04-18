@@ -1,0 +1,85 @@
+Please find the programming exercise we'd like you to complete. This should take about 3-5 hours and you have 48 hours to submit this assignment back to us: 
+
+  
+
+Programming Exercise 
+
+
+Use the NASA API described here to build a project that calls the Mars Rover Photos API with a given day as input, returning corresponding photo images as output.  
+
+
+
+Bonus 1: The application should cache and serve the requested images from NASA locally, for improved efficiency when making requests for the same date 
+
+ 
+
+Bonus 2: On application startup, read the file ‘dates.txt’. The application should fetch data for these dates on startup and seed the cache. See the bottom of this document for the contents of dates.txt 
+
+
+
+Acceptance Criteria 
+
+
+
+Backend: 
+
+
+
+Node.JS: Using any web framework like Express or NestJS 
+REST Api:  
+Accept a date as input, return urls to all the NASA Rover images taken on that date 
+NOTE: Not all dates will return images from the NASA Api 
+Caching (Bonus1):  
+Download, store, and host the images locally 
+Hitting the API with the same input twice should only make 1 call to the Nasa API 
+Seeding (Bonus2):  On startup, the backend service should use dates.txt to seed the cache with data for the dates listed 
+See the paragraph below for dates.txt format 
+ 
+
+Frontend: 
+
+
+
+React, Angular, or Vuejs 
+Should contain an input for selecting a date 
+Selecting a date should then use the backend API to get the images 
+MVP: Show clickable links to the images 
+Bonus: Display the images on the page 
+ 
+
+Additional Features (optional, but recommended): 
+
+
+
+Unit Tests 
+Static code analysis (linters, prettier) 
+Run both apps in docker 
+Use Typescript for the backend application 
+ 
+
+ 
+
+When complete, please send a link to your own GitHub or Gitlab repository in an email replying to the email from which you received this exercise.  
+
+ 
+
+Bonus 2 (Appendix):  
+
+
+
+Below are the contents of dates.txt. Notice that a few of the dates are invalid, your application should handle that gracefully.  
+
+
+
+02/27/17 
+June 2, 2018 
+Jul-13-2016 
+April 31, 2018 
+
+ 
+
+ 
+
+If you have additional questions, please ask. We look forward to reviewing your response.  
+
+Thanks,
